@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Stack, Grid } from "@mui/material";
+import { Stack, Grid, Divider } from "@mui/material";
 import { getMoviePopular, getMovieTopRated } from "../api/Api";
 import MovieCard from "../components/Card";
 import CategoryTitle from "../components/CategoryTitle";
@@ -59,6 +59,10 @@ const Home = () => {
       >
         <PopularMovies limit={16} />
       </Grid>
+      <Divider
+        variant="middle"
+        sx={{ backgroundColor: "white", my: 4, opacity: "25%" }}
+      />
       <CategoryTitle title="TOP RATED MOVIES" />
       <Grid
         container

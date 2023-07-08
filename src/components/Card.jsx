@@ -2,7 +2,7 @@ import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
 const MovieCard = ({ title, date, image }) => {
   return (
-    <Card style={{ height: 280, width: 140 }}>
+    <Card style={{ height: 300, width: 150 }}>
       <CardMedia component="img" image={image} alt={title} />
       <CardContent>
         <Typography

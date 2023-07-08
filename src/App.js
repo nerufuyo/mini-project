@@ -1,11 +1,12 @@
 import { Box, ThemeProvider, createTheme } from "@mui/material";
 import Header from "./pages/Header";
 import Layout from "./pages/Layout";
+import Footer from "./pages/Footer";
 
 const theme = createTheme({
   palette: {
     background: {
-      default: "#000",
+      default: "#0F0F0F",
     },
   },
 });
@@ -16,6 +17,7 @@ const App = () => {
       <Box sx={{ bgcolor: "background.default" }}>
         <Header />
         <Layout />
+        <Footer />
       </Box>
     </ThemeProvider>
   );
