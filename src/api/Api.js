@@ -6,3 +6,9 @@ export const getMoviePopular = async () => {
   const data = await response.json();
   return data.results;
 };
+
+export const getMovieTopRated = async () => {
+  const response = await fetch(`${baseUrl}movie/top_rated?api_key=${apiKey}`);
+  const data = await response.json();
+  return data.results;
+};

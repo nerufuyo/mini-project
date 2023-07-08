@@ -1,38 +1,37 @@
-import {
-  Box,
-  Card,
-  CardActionArea,
-  CardContent,
-  CardMedia,
-  Typography,
-} from "@mui/material";
+import { Card, CardContent, CardMedia, Typography } from "@mui/material";
 
-const MovieCard = ({ title, description, image }) => {
+const MovieCard = ({ title, date, image }) => {
   return (
-    <Box minWidth={"16rem"}>
-      <Card>
-        <CardActionArea>
-          <CardMedia component="img" image={image} alt={title} />
-          <CardContent>
-            <Typography gutterBottom variant="h5" component="div">
-              {title}
-            </Typography>
-            <Typography
-              variant="body2"
-              color="text.secondary"
-              sx={{
-                display: "-webkit-box",
-                overflow: "hidden",
-                WebkitBoxOrient: "vertical",
-                WebkitLineClamp: 3,
-              }}
-            >
-              {description}
-            </Typography>
-          </CardContent>
-        </CardActionArea>
-      </Card>
-    </Box>
+    <Card style={{ height: 280, width: 140 }}>
+      <CardMedia component="img" image={image} alt={title} />
+      <CardContent>
+        <Typography
+          gutterBottom
+          variant="h7"
+          component="div"
+          sx={{
+            display: "-webkit-box",
+            overflow: "hidden",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 1,
+          }}
+        >
+          {title}
+        </Typography>
+        <Typography
+          variant="body3"
+          color="text.secondary"
+          sx={{
+            display: "-webkit-box",
+            overflow: "hidden",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 3,
+          }}
+        >
+          {date}
+        </Typography>
+      </CardContent>
+    </Card>
   );
 };
 

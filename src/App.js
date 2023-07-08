@@ -1,13 +1,23 @@
-import { Box } from "@mui/material";
+import { Box, ThemeProvider, createTheme } from "@mui/material";
 import Header from "./pages/Header";
 import Layout from "./pages/Layout";
 
+const theme = createTheme({
+  palette: {
+    background: {
+      default: "#000",
+    },
+  },
+});
+
 const App = () => {
   return (
-    <Box width={"100vw"} height={"100vh"} sx={{ bgcolor: "MenuText" }}>
-      <Header />
-      <Layout />
-    </Box>
+    <ThemeProvider theme={theme}>
+      <Box sx={{ bgcolor: "background.default" }}>
+        <Header />
+        <Layout />
+      </Box>
+    </ThemeProvider>
   );
 };
 
