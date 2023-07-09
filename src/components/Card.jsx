@@ -7,7 +7,6 @@ const MovieCard = ({ title, date, image }) => {
       <CardContent>
         <Typography
           gutterBottom
-          variant="h7"
           component="div"
           sx={{
             display: "-webkit-box",
@@ -19,7 +18,6 @@ const MovieCard = ({ title, date, image }) => {
           {title}
         </Typography>
         <Typography
-          variant="body3"
           color="text.secondary"
           sx={{
             display: "-webkit-box",

@@ -10,15 +10,13 @@ const Footer = () => {
   return (
     <Box sx={{ px: 52, py: 2 }}>
       <Stack direction="column" gap={2} alignItems="center">
-        <Stack direction="row" alignItems="center">
-          <Divider
-            variant="middle"
-            sx={{ backgroundColor: "white", my: 4, opacity: "25%" }}
-          />
-          <Typography variant="body2" color={"white"}>
-            Copyright © 2023 by IDLIX. All Rights Reserved.
-          </Typography>
-        </Stack>
+        <Divider
+          variant="middle"
+          sx={{ backgroundColor: "white", my: 4, opacity: "25%" }}
+        />
+        <Typography variant="body2" color={"white"}>
+          Copyright © 2023 by RE-FLIX. All Rights Reserved.
+        </Typography>
         <Stack direction="row" gap={1} alignItems="center">
           <StyledLink
             href="#"
