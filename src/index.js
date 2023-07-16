@@ -11,3 +11,5 @@ root.render(
     <App />
   </React.StrictMode>
 );
+
+// Ini adalah perubahan
