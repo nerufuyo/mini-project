@@ -30,7 +30,7 @@ const Header = () => {
           <Stack direction="row" gap={1} marginRight={2} alignItems="center">
             <img src={Logo} alt="Re-Flix" width={40} />
             <Typography color={"red"} fontSize={28}>
-              RE-FLIX + HAHAHA
+              RE-FLIX + HAHAHA + NANANA
             </Typography>
           </Stack>
           <StyledLink
